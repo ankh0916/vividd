@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vivid bloom</title>
+	<style type="text/css">
+		body
+		{background-color: gray;
+		 width:1300px; height: 	800px;}
+		#TYP {position: relative; z-index:0;} 
+
+		#flower1{ position: absolute; width:150px; height:400px; top: 50px; left: 1350px; background: url('flower7.png');
+		background-size: cover;}
+		 
+		#flower{ position: absolute; width:400px; height:300px; top: 460px; left: 30px; background: url('flower7.png');
+		background-size: cover;}
+
+		#startbut
+			{	position: relative; z-index:1;
+				width: 500px;
+				height: 500px;
+				left: 1000px;
+				background:;
+				border-radius: 50%;
+				color: #1f1e1b;
+				opacity: 0.0;
+				font-size: 200px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 280px;
+				font-family:helvatica; 
+				text-transform: uppercase;
+				animation: boom 3s linear infinite; animation-play-state: paused; opacity: 0;
+				
+			}
+		@keyframes boom{
+
+			0%{box-shadow: 0 0 100px 0	rgba(233,195,0,.7);}
+			30%{box-shadow: 100px 0 0 100px rgba(233,195,0,0);}
+			70%{box-shadow: 0 0 0 100px rgba(233,195,0,0);}
+			100%{box-shadow: 0 0 0 0 rgba(233,195,0,0);}
+
+		}
+
+		#startbut1
+			{	position: absolute; 
+				top: 0px; 
+				width: 200px;
+				height: 200px;
+				left: 330px;
+				background:;
+				border-radius: 50%;
+				color: 
+				opacity: 0.0;
+				font-size: 90px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 280px;
+				font-family:helvatica; 
+				text-transform: uppercase;
+				animation: boo 2s linear infinite; animation-play-state: paused; opacity: 0;
+				
+			}
+		@keyframes boo{
+			0%{box-shadow: 0 0 100px 0	rgba(0,300,0,.7);}
+			30%{box-shadow: 0 0 0 100px rgba(233,195,0,0);}
+			70%{box-shadow: 0 0 0 100px rgba(233,195,0,0);}
+			100%{box-shadow: 0 0 0 0 rgba(233,195,0,0);}
+
+		}
+
+
+		#square{position: absolute; z-index:2; width:20px; height: 20px; margin-top:200px; left:700px; background:   color: white;
+			animation: mov 4s ease infinite; animation-delay: 2s; font-size: 40px;  
+				font-weight: bold;  }
+
+			@keyframes mov
+			{
+			0% {top:200px; opacity: 0}
+			100%{left: 1000px;  opacity: 1}
+		}		
+
+		#back3 {width: 600px; height: 750px; top: 100px; left:500px; position: absolute;}
+
+		#bloom1 {height: 150px; top:290px; left:640px; position: absolute;
+			animation: bla 2s ease 1 forwards; animation-delay: 1s;animation-play-state: paused; }
+
+		@keyframes bla{from{ opacity: 0}
+					to{ height: 150px; top: 290px; left:770px;  opacity: 1}
+					}
+				
+		#bloom2 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: blb 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes blb{from{ opacity: 0}
+					to{height: 300px; top: 370px; left:700px;  opacity: 1}
+					}
+
+		#bloom3 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: blc 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+ 
+		@keyframes blc{from{ opacity: 0}
+					to{height: 130px; top: 170px; left:660px;  opacity: 1}
+					}
+		#bloom4 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: bld 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes bld{from{ opacity: 0}
+					to{height: 170px; top: 500px; left:600px;  opacity: 1}
+					}
+		#bloom5 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: ble 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes ble{from{ opacity: 0}
+					to{height: 130px; top: 400px; left:750px;  opacity: 1}
+					}
+		#bloom6 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: blf 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes blf{from{ opacity: 0}
+					to{height: 210px; top: 200px; left:680px;  opacity: 1}
+					}
+		#bloom7 {width:100x; height: 100px; top:290px; left:640px; position: absolute;
+			animation: blg 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes blg{from{ opacity: 0}
+					to{top: 350px; left:770px;  opacity: 1}
+					}
+
+		#bloom8 {width:100x; height: 100px; top:290px; left:630px; position: absolute;
+			animation: blh 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes blh{from{ opacity: 0}
+					to{top: 200px; left:600px;  opacity: 1}
+					}
+
+
+		#bloom9 {width:100x; height: 100px; top:290px; left:630px; position: absolute;
+			animation: bli 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes bli{from{top: 600px; left:995px;}
+					to{height: 150px; top: 445px; left:995px;  opacity: 1}
+					}	
+
+		#bloom10 {width:100x; height: 100px; top:290px; left:630px; position: absolute;
+			animation: blj 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+
+		@keyframes blj{from{top: 650px; left:650px;}
+					to{height: 150px; top: 650px; left:550px;  opacity: 1}
+					}					
+								
+		#back2 {width: 600px; height: 750px; top: 100px; left:500px; position: absolute;
+			animation: animate 2s ease 1 forwards; animation-delay: 1s; animation-play-state: paused;}
+		
+
+		@keyframes animate
+			{
+			0% {}
+			100%{top: 130px; left: 450px;
+			}
+
+
+			
+	</style>
+</head>
+<body>
+
+<div id= "TYP">	
+<h1><a href="index.html">Make.it.ViViD</a></h1>
+<input id="night_day" type="button" value="vivid" 
+onclick="
+	var target = document.querySelector('body');
+	if(this.value === 'vivid'){
+		target.style.backgroundColor = '#e13094';
+		target.style.color = 'white';
+		this.value = 'return';
+
+		var alist = document.querySelectorAll('a');
+		var i = 0;
+		while(i<alist.length){
+			alist[i].style.color='yellowgreen';
+			i = i + 1;
+		}
+	} else {
+		target.style.backgroundColor = 'gray';
+		target.style.color = 'black';
+		this.value = 'vivid';
+
+		var links = document.querySelectorAll('a');
+		var i = 0;
+		while(i<links.length){
+			links[i].style.color='blue';
+			i=i+1;
+		}
+	}
+	">
+
+	<ol>
+		<li><a href="1.html">CliCk FaCe</a></li>
+		<li><a href="2.html">cLIcK VivID</a></li>
+		<li><a href="3.html">ClIck flower MORE</a></li>
+	</ol>
+<h2>Flower = language</h2>
+<p id=texT>Through news in terms of  the wearing of bracelet of the entertainers, especially,<br> Huy Umm bracelet which has received many attention and became popular is meaningful thing in thinking about change of the perception and solution of the problem  about this words: blooming their hopes with you. The Huy Umm bracelet is the easiest way to help comfort women.[S]ome of the most exciting digital art right now is coming out of Brazil, and Marcelo Monreal’s surrealist collages are one of our favourite new discoveries. The Santa Catarina based artist explores the hidden parts of our identity by deconstructing famous faces in unexpected ways.
+
+Elegantly slicing up visuals of Kate Moss, Lindsay Lohan and Naomi Campbell, Marcelo fuses pop culture with the natural world, creating jarring yet beautiful portraits embellished with vibrant flowers in bloom. For him, the process is about finding the true self, the concealed beauty that people hide from the outside world.
+
+Follow him on Instagram now for artful inspiration, and sample some of his Faces [UN]bonded series below.</p>
+
+
+</div>
+<div id= "square"></div>	
+<div id="startbut">vivid</div>
+<div id="startbut1">bloom</div>
+<img src="f14.png" id="bloom9">
+<img src="f15.png" id="bloom10">
+<img src="back3.png" id="back3">
+<img src="f1.png" id="bloom1">
+<img src="f3.png" id="bloom4">
+<img src="f6.png" id="bloom6">
+<img src="f5.png" id="bloom3">
+<img src="f2.png" id="bloom2">
+<img src="f8.png" id="bloom5">
+<img src="f7.png" id="bloom7">
+<img src="f11.png" id="bloom8">
+<img src="back2.png" id="back2">
+<div id="flower"></div>
+<div id="flower1"></div>
+
+<script type="text/javascript">
+	
+	startbut.style.animationPlayState = "paused";
+	startbut1.style.animationPlayState = "paused";
+
+	back2.onclick = function(){
+		var text = "VIVID BLOOMING ViViD BLOssOM essence blooming ViviD BlossoM Vivid blOOmInG";
+	var newText = text.split(" ");
+	for(var i=0; i < newText.length; i++){
+		var a = document.getElementById('square');
+		var b = a.cloneNode(true);
+		b.innerHTML = newText[i];
+		b.style.left = 200*i + "px";
+		b.style.top = 60*i + "px";
+		b.style.animationDelay = i*0.2 + "s"
+		document.body.appendChild(b);	
+	}
+				back2.style.animationPlayState = "running";
+				bloom1.style.animationPlayState = "running";
+				bloom2.style.animationPlayState = "running";
+				bloom3.style.animationPlayState = "running";
+				bloom4.style.animationPlayState = "running";
+				bloom5.style.animationPlayState = "running";
+				bloom6.style.animationPlayState = "running";
+				bloom7.style.animationPlayState = "running";
+				bloom8.style.animationPlayState = "running";
+				bloom9.style.animationPlayState = "running";
+				bloom10.style.animationPlayState = "running";
+				startbut.style.animationPlayState = "running";
+				startbut1.style.animationPlayState = "running";
+				startbut.style.opacity = "1";
+				startbut1.style.opacity = "1";
+				square.style.animationPlayState = "running";
+				}
+
+	var currentFlower = 1;
+		
+		flower.onclick = function(){
+			currentFlower++;
+			if(currentFlower == 8){currentFlower = 1;}
+			flower.style.background = "url('flower" + currentFlower + ".gif')";
+			flower.style.backgroundSize = "cover";
+	}		
+
+	var currentFlower = 1;
+		
+		flower1.onclick = function(){
+			currentFlower++;
+			if(currentFlower == 8){currentFlower = 1;}
+			flower.style.background = "url('flower" + currentFlower + ".gif')";
+			flower.style.backgroundSize = "cover";
+	}	
+
+				
+</script>
+</body>
+</html>
